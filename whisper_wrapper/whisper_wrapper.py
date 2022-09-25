@@ -3,7 +3,6 @@ from typing import Union
 
 import torchaudio
 import whisper
-from tqdm import tqdm
 
 from whisper_wrapper.utils import utils
 
@@ -33,3 +32,4 @@ def transcribe_in_batches(
         results.append(model.transcribe(audio_batch))
         if show_print:
             utils.enablePrint()
+        return results
