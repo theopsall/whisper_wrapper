@@ -1,7 +1,6 @@
 """Main module."""
 from typing import Union
 
-import torchaudio
 import whisper
 
 from whisper_wrapper.utils import utils
